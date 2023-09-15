@@ -182,6 +182,7 @@ var Game = /** @class */ (function () {
         this.scoreContainer = document.getElementById('score');
         this.startButton = document.getElementById('start-button');
         this.instructions = document.getElementById('instructions');
+        this.name = document.getElementById('name');
         this.scoreContainer.innerHTML = '0';
         this.newBlocks = new THREE.Group();
         this.placedBlocks = new THREE.Group();
@@ -292,6 +293,8 @@ var Game = /** @class */ (function () {
         this.newBlocks.add(newKidOnTheBlock.mesh);
         this.blocks.push(newKidOnTheBlock);
         this.stage.setCamera(this.blocks.length * 2);
+        if (this.blocks.length >= 3)
+            this.name.classList.add('hide');
         if (this.blocks.length >= 5)
             this.instructions.classList.add('hide');
     };
