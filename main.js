@@ -262,6 +262,7 @@ var Game = /** @class */ (function () {
         this.blocks = this.blocks.slice(0, 1);
         setTimeout(function () {
             _this.startGame();
+            location.reload()
         }, cameraMoveSpeed * 1000);
     };
     Game.prototype.placeBlock = function () {

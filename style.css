@@ -135,7 +135,7 @@ html, body {
   display: block;
 }
 #bloque1.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque2 {
@@ -146,7 +146,7 @@ html, body {
   display: block;
 }
 #bloque2.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque3 {
@@ -157,7 +157,7 @@ html, body {
   display: block;
 }
 #bloque3.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque4 {
@@ -168,7 +168,7 @@ html, body {
   display: block;
 }
 #bloque4.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque5 {
@@ -179,7 +179,7 @@ html, body {
   display: block;
 }
 #bloque5.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque6 {
@@ -190,7 +190,7 @@ html, body {
   display: block;
 }
 #bloque6.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #bloque7 {
@@ -201,7 +201,7 @@ html, body {
   display: block;
 }
 #bloque7.hide {
-  opacity: 0 !important;
+  display:none;
 }
 
 #container.playing #score, #container.resetting #score {
