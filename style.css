@@ -120,6 +120,89 @@ html, body {
 #name.hide {
   opacity: 0 !important;
 }
+#materia.hide {
+  opacity: 0 !important;
+}
+#logotec.hide {
+  opacity: 0 !important;
+}
+
+#bloque1 {
+  display:none;
+}
+#bloque1.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque1.hide {
+  opacity: 0 !important;
+}
+
+#bloque2 {
+  display:none;
+}
+#bloque2.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque2.hide {
+  opacity: 0 !important;
+}
+
+#bloque3 {
+  display:none;
+}
+#bloque3.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque3.hide {
+  opacity: 0 !important;
+}
+
+#bloque4 {
+  display:none;
+}
+#bloque4.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque4.hide {
+  opacity: 0 !important;
+}
+
+#bloque5 {
+  display:none;
+}
+#bloque5.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque5.hide {
+  opacity: 0 !important;
+}
+
+#bloque6 {
+  display:none;
+}
+#bloque6.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque6.hide {
+  opacity: 0 !important;
+}
+
+#bloque7 {
+  display:none;
+}
+#bloque7.show {
+  opacity: 1 !important;
+  display: block;
+}
+#bloque7.hide {
+  opacity: 0 !important;
+}
 
 #container.playing #score, #container.resetting #score {
   -webkit-transform: translatey(0px) scale(1);
@@ -149,4 +232,9 @@ html, body {
 
 #name {
   margin-bottom: 2rem;
+}
+
+#logotec {
+  width: 240px;
+  margin-bottom: 30px;
 }

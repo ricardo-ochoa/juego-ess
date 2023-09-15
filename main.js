@@ -183,6 +183,15 @@ var Game = /** @class */ (function () {
         this.startButton = document.getElementById('start-button');
         this.instructions = document.getElementById('instructions');
         this.name = document.getElementById('name');
+        this.materia = document.getElementById('materia');
+        this.logotec = document.getElementById('logotec');
+        this.bloque1 = document.getElementById('bloque1');
+        this.bloque2 = document.getElementById('bloque2');
+        this.bloque3 = document.getElementById('bloque3');
+        this.bloque4 = document.getElementById('bloque4');
+        this.bloque5 = document.getElementById('bloque5');
+        this.bloque6 = document.getElementById('bloque6');
+        this.bloque7 = document.getElementById('bloque7');
         this.scoreContainer.innerHTML = '0';
         this.newBlocks = new THREE.Group();
         this.placedBlocks = new THREE.Group();
@@ -293,10 +302,42 @@ var Game = /** @class */ (function () {
         this.newBlocks.add(newKidOnTheBlock.mesh);
         this.blocks.push(newKidOnTheBlock);
         this.stage.setCamera(this.blocks.length * 2);
-        if (this.blocks.length >= 3)
+        if (this.blocks.length >= 2)
             this.name.classList.add('hide');
-        if (this.blocks.length >= 5)
+        if (this.blocks.length >= 2)
+            this.materia.classList.add('hide');
+        if (this.blocks.length >= 2)
+            this.logotec.classList.add('hide');
+        if (this.blocks.length >= 3)
             this.instructions.classList.add('hide');
+        if (this.blocks.length >= 4)
+            this.bloque1.classList.add('show');
+        if (this.blocks.length >= 8)
+            this.bloque1.classList.add('hide');
+        if (this.blocks.length >= 9)
+            this.bloque2.classList.add('show');
+        if (this.blocks.length >= 12)
+            this.bloque2.classList.add('hide');
+        if (this.blocks.length >= 13)
+            this.bloque3.classList.add('show');
+        if (this.blocks.length >= 16)
+            this.bloque3.classList.add('hide');
+        if (this.blocks.length >= 17)
+            this.bloque4.classList.add('show');
+        if (this.blocks.length >= 20)
+            this.bloque4.classList.add('hide');
+        if (this.blocks.length >= 21)
+            this.bloque5.classList.add('show');
+        if (this.blocks.length >= 25)
+            this.bloque5.classList.add('hide');
+        if (this.blocks.length >= 26)
+            this.bloque6.classList.add('show');
+        if (this.blocks.length >= 30)
+            this.bloque6.classList.add('hide');
+        if (this.blocks.length >= 31)
+            this.bloque7.classList.add('show');
+        if (this.blocks.length >= 35)
+            this.bloque7.classList.add('hide');
     };
     Game.prototype.endGame = function () {
         this.updateState(this.STATES.ENDED);
